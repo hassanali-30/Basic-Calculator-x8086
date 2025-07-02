@@ -1,38 +1,66 @@
-# Basic-Calculator-x8086
-This program allows users to perform basic arithmetic operations such as addition, multiplication, subtraction, and division. The code includes functionality for user input, calculation, and output display.
+# 🧮 Basic Calculator - x8086 Assembly
 
-Here's a high-level overview of how the program works:
+This project is a simple **calculator written in x8086 Assembly language** that performs basic arithmetic operations such as **Addition, Subtraction, Multiplication, and Division**.
 
-User Interface:
+---
 
-The user is prompted to choose an arithmetic operation from the list: Add, Multiply, Subtract, or Divide.
+## 🚀 Features
 
-The program displays appropriate messages for user input.
+- ✅ Addition
+- ✅ Subtraction
+- ✅ Multiplication
+- ✅ Division
+- ✅ User-friendly input/output via interrupts
+- ✅ Modular design using subroutines
+- ✅ ASCII to numeric input conversion
 
-Input Handling:
+---
 
-The program reads the user's choice and inputs for the numbers to be operated on.
+## 📋 How It Works
 
-It processes the input numbers using subroutines to convert them from ASCII to numeric values.
+### 1. **User Interface**
+- The program prompts the user to select an arithmetic operation:
+  - **Add**
+  - **Subtract**
+  - **Multiply**
+  - **Divide**
 
-Arithmetic Operations:
+### 2. **Input Handling**
+- Accepts input from the user for both operands.
+- Converts ASCII characters to numeric format using subroutines.
 
-The program performs the chosen arithmetic operation (addition, multiplication, subtraction, or division) on the input numbers.
+### 3. **Arithmetic Operations**
+- Performs the selected operation using registers and instructions.
+- Stores the result appropriately.
 
-The result of the operation is calculated and stored.
+### 4. **Output Display**
+- Converts result back to ASCII.
+- Displays it to the screen.
+- Waits for any key to exit.
 
-Output Display:
+---
 
-The program displays the result of the arithmetic operation to the user.
+## 🧠 Concepts Covered
 
-It also prompts the user to press any key to exit the program.
+This project is ideal for beginners learning x86 assembly. It demonstrates:
 
-This Assembly code is an excellent project for understanding low-level programming concepts, such as:
+- 🗃️ Register and memory usage  
+- 📥 Handling user input and output via `INT 21h`  
+- ➕ Arithmetic instruction handling  
+- ♻️ Subroutine usage for clean and modular code  
 
-Working with registers and memory.
+---
 
-Handling user input and output using interrupts.
+## 📦 Requirements
 
-Implementing basic arithmetic operations.
+- DOSBox or any x86 emulator  
+- TASM/MASM Assembler  
 
-Using subroutines for modularity and reusability.
+---
+
+## 📂 File Structure
+
+```plaintext
+Basic-Calculator/
+├── calculator.asm       # Main source code
+├── README.md            # Project documentation (this file)
