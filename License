@@ -1,0 +1,39 @@
+
+---
+
+## 📁 `main` vs `dev` – How to Use Branches on GitHub
+
+To follow GitHub best practices:
+
+### 🔹 `main` branch:
+- Upload your **final, working version** of the simulator.
+- Should include:
+  - All `src/` code (working and tested)
+  - `README.md`
+  - `Report/Final_Report.pdf`
+  - `sim_results.txt`
+
+### 🔸 `dev` branch:
+- Upload your **work-in-progress** or experiments.
+- Use this for:
+  - New features (e.g., adding GUI later)
+  - Code you're still testing
+  - Collaborating with teammates before merging
+
+---
+
+### 🚀 Uploading Flow (if using Git)
+
+```bash
+# Start with main
+git checkout -b main
+git add .
+git commit -m "Upload final working simulator"
+git push origin main
+
+# Create and switch to dev
+git checkout -b dev
+# Make changes, then push to dev
+git add .
+git commit -m "Testing new feature X"
+git push origin dev
