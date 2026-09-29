@@ -1,66 +1,41 @@
-# 🧮 Basic Calculator - x8086 Assembly
+# x8086 Assembly Calculator
 
-This project is a simple **calculator written in x8086 Assembly language** that performs basic arithmetic operations such as **Addition, Subtraction, Multiplication, and Division**.
+A menu-driven calculator written in x8086 Assembly. It supports addition, subtraction, multiplication, and division while demonstrating low-level input, output, arithmetic, and subroutine design.
 
----
+## Features
 
-## 🚀 Features
+- Addition, subtraction, multiplication, and division
+- ASCII-to-number conversion for user input
+- Result conversion back to displayable text
+- Console interaction through DOS interrupts
+- Reusable subroutines for input, calculation, and output
 
-- ✅ Addition
-- ✅ Subtraction
-- ✅ Multiplication
-- ✅ Division
-- ✅ User-friendly input/output via interrupts
-- ✅ Modular design using subroutines
-- ✅ ASCII to numeric input conversion
+## Requirements
 
----
+- DOSBox or another x86-compatible emulator
+- TASM or MASM assembler
 
-## 📋 How It Works
+## Run
 
-### 1. **User Interface**
-- The program prompts the user to select an arithmetic operation:
-  - **Add**
-  - **Subtract**
-  - **Multiply**
-  - **Divide**
+1. Open the project in DOSBox.
+2. Assemble `calculator.asm` with TASM or MASM.
+3. Link the generated object file.
+4. Run the resulting executable.
 
-### 2. **Input Handling**
-- Accepts input from the user for both operands.
-- Converts ASCII characters to numeric format using subroutines.
+The exact assembler and linker commands depend on the installed toolchain.
 
-### 3. **Arithmetic Operations**
-- Performs the selected operation using registers and instructions.
-- Stores the result appropriately.
+## Project Structure
 
-### 4. **Output Display**
-- Converts result back to ASCII.
-- Displays it to the screen.
-- Waits for any key to exit.
+```text
+calculator.asm   # Main Assembly source
+README.md        # Project documentation
+License          # License information
+```
 
----
+## Concepts Demonstrated
 
-## 🧠 Concepts Covered
-
-This project is ideal for beginners learning x86 assembly. It demonstrates:
-
-- 🗃️ Register and memory usage  
-- 📥 Handling user input and output via `INT 21h`  
-- ➕ Arithmetic instruction handling  
-- ♻️ Subroutine usage for clean and modular code  
-
----
-
-## 📦 Requirements
-
-- DOSBox or any x86 emulator  
-- TASM/MASM Assembler  
-
----
-
-## 📂 File Structure
-
-```plaintext
-Basic-Calculator/
-├── calculator.asm       # Main source code
-├── README.md            # Project documentation (this file)
+- x86 registers and memory
+- Arithmetic instructions
+- DOS `INT 21h` input/output
+- Subroutines and control flow
+- Character and numeric conversion
