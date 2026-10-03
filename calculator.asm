@@ -9,6 +9,7 @@ msg3:    db      0dh,0ah,"Enter Second No: $"
 msg4:    db      0dh,0ah,"Choice Error $" 
 msg5:    db      0dh,0ah,"Result : $" 
 msg6:    db      0dh,0ah ,'press any key to exit... ', 0Dh,0Ah, '$'
+msg7:    db      0dh,0ah,"Cannot divide by zero.",0Dh,0Ah, '$'
 
 start:  mov ah,9
         mov dx, offset msg
@@ -174,6 +175,8 @@ Divide:     mov ah,9
             pop bx
             mov ax,bx
             mov cx,dx
+            cmp cx,0
+            je DivideByZero
             mov dx,0
             mov bx,0
             div cx
@@ -191,3 +194,10 @@ Divide:     mov ah,9
             cmp bx,0
             je exit
             jmp exit
+
+DivideByZero:
+            mov dx, offset msg7
+            mov ah,9
+            int 21h
+            jmp exit
+
