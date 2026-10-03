@@ -67,5 +67,5 @@ License          # License information
 
 - Designed for simple positive integer input.
 - Arithmetic uses 16-bit registers and may overflow for large values.
-- Division-by-zero validation should be added before production use.
+- Division-by-zero input is detected and reported safely.
 - The program requires a DOS-compatible emulator and assembler toolchain.
