@@ -11,7 +11,7 @@ This project is a compact example of how a command-line application works close 
 - ASCII digit to numeric-value conversion
 - Numeric result to displayable ASCII conversion
 - Reusable input and output subroutines
-- DOS keyboard and console services through \x60INT 16h\x60 and \x60INT 21h\x60
+- DOS keyboard and console services through `INT 16h` and `INT 21h`
 - 16-bit register-based arithmetic
 
 ## How It Works
@@ -34,25 +34,25 @@ This is a real-mode DOS application. It is not a native Linux or modern Windows 
 
 ## Running the Program
 
-Place \x60calculator.asm\x60 in a directory available inside DOSBox, then assemble and link it with the installed toolchain.
+Place `calculator.asm` in a directory available inside DOSBox, then assemble and link it with the installed toolchain.
 
 Example TASM workflow:
 
-\x60\x60\x60dos
+```dos
 tasm calculator.asm
 tlink calculator.obj
 calculator.exe
-\x60\x60\x60
+```
 
 The exact commands may differ between TASM, MASM, and their linker versions.
 
 ## Project Structure
 
-\x60\x60\x60text
+```text
 calculator.asm   # 8086 Assembly source code
 README.md        # Project documentation
 License          # License information
-\x60\x60\x60
+```
 
 ## Concepts Demonstrated
 
